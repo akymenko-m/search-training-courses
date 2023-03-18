@@ -16,7 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <BrowserRouter basename="search-training-courses">
           <ChakraProvider>
             <GlobalStyle />
-
             <App />
           </ChakraProvider>
         </BrowserRouter>
