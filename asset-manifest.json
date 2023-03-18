@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/search-training-courses/static/css/main.53a01af5.css",
-    "main.js": "/search-training-courses/static/js/main.276986b5.js",
+    "main.js": "/search-training-courses/static/js/main.34b6c7b6.js",
     "static/media/elearning-bg-mob.png": "/search-training-courses/static/media/elearning-bg-mob.67f4b3783897a3c0e567.png",
     "static/media/elearning-bg.jpg": "/search-training-courses/static/media/elearning-bg.7213a5d87d2693784d5c.jpg",
     "index.html": "/search-training-courses/index.html",
     "main.53a01af5.css.map": "/search-training-courses/static/css/main.53a01af5.css.map",
-    "main.276986b5.js.map": "/search-training-courses/static/js/main.276986b5.js.map"
+    "main.34b6c7b6.js.map": "/search-training-courses/static/js/main.34b6c7b6.js.map"
   },
   "entrypoints": [
     "static/css/main.53a01af5.css",
-    "static/js/main.276986b5.js"
+    "static/js/main.34b6c7b6.js"
   ]
 }
