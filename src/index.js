@@ -13,12 +13,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename="search-training-courses">
-          <ChakraProvider>
+        <ChakraProvider>
+          <BrowserRouter basename="search-training-courses">
             <GlobalStyle />
             <App />
-          </ChakraProvider>
-        </BrowserRouter>
+          </BrowserRouter>
+        </ChakraProvider>
       </PersistGate>
     </Provider>
   </React.StrictMode>
