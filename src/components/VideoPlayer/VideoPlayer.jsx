@@ -86,7 +86,7 @@ const VideoPlayer = ({ poster, link, title, lessonNumber }) => {
     sources: [
       {
         src: link,
-        // type: 'application/x-mpegURL',
+        type: 'application/x-mpegURL',
       },
     ],
   };

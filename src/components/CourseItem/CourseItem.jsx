@@ -9,7 +9,6 @@ import {
 } from './CourseItem.styled';
 
 export const CourseItem = ({ course }) => {
-  console.log(course);
   const location = useLocation();
   const skills = course.meta.skills;
 
