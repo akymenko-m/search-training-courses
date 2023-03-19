@@ -7,7 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const LessonItem = ({ lesson }) => {
-  // console.log(lesson);
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {

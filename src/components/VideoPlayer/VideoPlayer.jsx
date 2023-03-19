@@ -39,8 +39,7 @@ const Video = props => {
         // return () => {
         //   if (player !== null) {
         //     player.dispose();
-        //   }
-        // };
+        //   }};
       }
     } catch (error) {
       console.error(error);
@@ -74,21 +73,20 @@ const Video = props => {
 };
 
 const VideoPlayer = ({ poster, link, title, lessonNumber }) => {
-  // console.log(link);
   const isLoading = useSelector(selectIsLoading);
 
   const play = {
     lessonNumber: lessonNumber,
     data: title,
-    // fill: true,
-    // fluid: true,
+    fill: true,
+    fluid: true,
     controls: true,
     preload: 'metadata',
     poster: poster,
     sources: [
       {
         src: link,
-        type: 'application/x-mpegURL',
+        // type: 'application/x-mpegURL',
       },
     ],
   };

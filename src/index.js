@@ -14,9 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <ChakraProvider>
-          <BrowserRouter
-          // basename="search-training-courses"
-          >
+          <BrowserRouter basename="search-training-courses">
             <GlobalStyle />
             <App />
           </BrowserRouter>
