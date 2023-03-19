@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/search-training-courses/static/css/main.c3d5249d.css",
-    "main.js": "/search-training-courses/static/js/main.afcd1eef.js",
-    "static/js/465.0221edd0.chunk.js": "/search-training-courses/static/js/465.0221edd0.chunk.js",
-    "static/js/192.467fc715.chunk.js": "/search-training-courses/static/js/192.467fc715.chunk.js",
+    "main.js": "/search-training-courses/static/js/main.dfabe2ff.js",
+    "static/js/465.c5c59f92.chunk.js": "/search-training-courses/static/js/465.c5c59f92.chunk.js",
+    "static/js/192.4b404f9a.chunk.js": "/search-training-courses/static/js/192.4b404f9a.chunk.js",
     "static/css/637.65e2b6be.chunk.css": "/search-training-courses/static/css/637.65e2b6be.chunk.css",
     "static/js/637.6cc4651d.chunk.js": "/search-training-courses/static/js/637.6cc4651d.chunk.js",
     "static/css/229.60a28566.chunk.css": "/search-training-courses/static/css/229.60a28566.chunk.css",
@@ -11,15 +11,15 @@
     "static/media/elearning-bg.jpg": "/search-training-courses/static/media/elearning-bg.7213a5d87d2693784d5c.jpg",
     "index.html": "/search-training-courses/index.html",
     "main.c3d5249d.css.map": "/search-training-courses/static/css/main.c3d5249d.css.map",
-    "main.afcd1eef.js.map": "/search-training-courses/static/js/main.afcd1eef.js.map",
-    "465.0221edd0.chunk.js.map": "/search-training-courses/static/js/465.0221edd0.chunk.js.map",
-    "192.467fc715.chunk.js.map": "/search-training-courses/static/js/192.467fc715.chunk.js.map",
+    "main.dfabe2ff.js.map": "/search-training-courses/static/js/main.dfabe2ff.js.map",
+    "465.c5c59f92.chunk.js.map": "/search-training-courses/static/js/465.c5c59f92.chunk.js.map",
+    "192.4b404f9a.chunk.js.map": "/search-training-courses/static/js/192.4b404f9a.chunk.js.map",
     "637.65e2b6be.chunk.css.map": "/search-training-courses/static/css/637.65e2b6be.chunk.css.map",
     "637.6cc4651d.chunk.js.map": "/search-training-courses/static/js/637.6cc4651d.chunk.js.map",
     "229.60a28566.chunk.css.map": "/search-training-courses/static/css/229.60a28566.chunk.css.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.afcd1eef.js"
+    "static/js/main.dfabe2ff.js"
   ]
 }
