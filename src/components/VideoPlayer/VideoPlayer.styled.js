@@ -15,7 +15,7 @@ export const Caption = styled.p`
 `;
 
 export const VideoStyled = styled.video`
-  & img {
+  & picture img {
     object-fit: cover;
   }
 `;

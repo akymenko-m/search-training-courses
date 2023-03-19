@@ -11,7 +11,6 @@ import { Caption, VideoStyled } from './VideoPlayer.styled';
 const arr = storage.load('progressCourses') ?? [];
 
 const Video = props => {
-  console.log(props);
   const videoNode = useRef(null);
   const [player, setPlayer] = useState(null);
 
@@ -27,7 +26,6 @@ const Video = props => {
         setPlayer(_player);
 
         if (!props.sources.src) {
-          // console.log('error');
           return;
         }
 
@@ -76,13 +74,14 @@ const Video = props => {
 };
 
 const VideoPlayer = ({ poster, link, title, lessonNumber }) => {
+  // console.log(link);
   const isLoading = useSelector(selectIsLoading);
 
   const play = {
     lessonNumber: lessonNumber,
     data: title,
-    fill: true,
-    fluid: true,
+    // fill: true,
+    // fluid: true,
     controls: true,
     preload: 'metadata',
     poster: poster,
