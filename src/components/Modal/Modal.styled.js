@@ -16,13 +16,14 @@ export const Overlay = styled.div`
 export const ModalStyled = styled.div`
   background-color: #fff;
   min-width: 300px;
-  min-height: auto;
+  min-height: 450px;
+
   @media screen and (min-width: 400px) {
     width: calc(100vw - 48px);
   }
 
   @media screen and (min-width: 1000px) {
-    width: calc(100vw - 96px);
+    width: 1000px;
     max-height: 500px;
   }
 `;

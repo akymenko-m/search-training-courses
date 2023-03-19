@@ -39,9 +39,9 @@ export const Modal = ({ lessonNumber, title, link, poster, onClose }) => {
 };
 
 Modal.propTypes = {
-  lessonNumber: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  poster: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
+  lessonNumber: PropTypes.number,
+  title: PropTypes.string,
+  link: PropTypes.string,
+  poster: PropTypes.string,
+  onClose: PropTypes.func,
 };

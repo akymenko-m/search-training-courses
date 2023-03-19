@@ -1,34 +1,52 @@
 import PropTypes from 'prop-types';
-import Loader from 'components/Loader/Loader';
-import storage from 'helpers/storage';
 import React, { useEffect, useRef, useState } from 'react';
+import videojs from 'video.js';
 import { useSelector } from 'react-redux';
 import { selectIsLoading } from 'redux/selectors';
-import videojs from 'video.js';
+import Loader from 'components/Loader/Loader';
+import storage from 'helpers/storage';
 import 'video.js/dist/video-js.css';
 import { Caption, VideoStyled } from './VideoPlayer.styled';
 
 const arr = storage.load('progressCourses') ?? [];
 
 const Video = props => {
+  console.log(props);
   const videoNode = useRef(null);
   const [player, setPlayer] = useState(null);
 
   useEffect(() => {
-    if (videoNode.current) {
-      const _player = videojs(videoNode.current, props);
-      _player.ready(function () {
-        const matchEl = arr.find(el => el.title === props.data);
-        _player.currentTime(matchEl ? matchEl.time : '0');
-      });
+    try {
+      if (videoNode.current) {
+        const _player = videojs(videoNode.current, props);
+        _player.ready(function () {
+          const matchEl = arr.find(el => el.title === props.data);
+          _player.currentTime(Number(matchEl ? matchEl.time : '0'));
+        });
 
-      setPlayer(_player);
+        setPlayer(_player);
 
-      return () => {
-        if (player !== null) {
-          player.dispose();
+        if (!props.sources.src) {
+          // console.log('error');
+          return;
         }
-      };
+
+        return () => {
+          if (player) {
+            player.dispose();
+            videoNode.current = null;
+          }
+        };
+
+        // return () => {
+        //   if (player !== null) {
+        //     player.dispose();
+        //   }
+        // };
+      }
+    } catch (error) {
+      console.error(error);
+      throw new Error('An error has occurred');
     }
   }, [player, props]);
 
